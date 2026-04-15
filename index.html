@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Professionelle Rechtsberatung in Hanover">
+<meta name="description" content="{{HERO_DESC}}">
 <title>Zahnärzte am Küchengarten Dr. Aaron Boruchov & Kollegen — Rechtsanwalt Hanover</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +54,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--fg);overflo
 .btn-outline-light:hover .arrow-icon{transform:translateX(3px)}
 
 /* NAVBAR */
-.nav{position:fixed;top:41px;left:0;right:0;z-index:100;padding:20px 0;transition:all var(--t)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 0;transition:all var(--t)}
 .nav.scrolled{background:rgba(8,13,26,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--glass-dark-border);padding:13px 0;box-shadow:0 4px 24px rgba(0,0,0,.15)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%}
 .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
@@ -379,7 +379,6 @@ footer{background:var(--navy-dark);border-top:1px solid var(--glass-dark-border)
 </style>
 </head>
 <body>
-<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#C6A55C;color:#000;text-align:center;padding:10px;font-size:13px;font-weight:600">🎯 DEMO — Website-Entwurf von SYSTEMS™ | <a href="https://wa.me/4915126186817" style="color:#000;text-decoration:underline">Interesse? Jetzt melden</a></div>
 
 <!-- NAV -->
 <nav class="nav" id="navbar">
@@ -431,11 +430,11 @@ footer{background:var(--navy-dark);border-top:1px solid var(--glass-dark-border)
         </div>
         <span>Top bewertet · Hanover</span>
       </div>
-      <h1 class="hero-h1"><span class="gold">Zahnärzte am Küchengarten Dr. Aaron Boruchov & Kollegen</span></h1>
-      <p class="hero-desc">Professionelle Rechtsberatung in Hanover</p>
+      <h1 class="hero-h1">Zahnärzte am Küchengarten Dr. Aaron Boruchov & Kollegen</h1>
+      <p class="hero-desc">{{HERO_DESC}}</p>
       <div class="hero-actions">
         <a href="#kontakt" class="btn-gold">Kostenlose Erstberatung <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-        <a href="tel:0511457193" class="btn-outline-light"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.49 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.8 6.8l1.06-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 0511 457193 anrufen</a>
+        <a href="tel:{{PHONE_CLEAN}}" class="btn-outline-light"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.49 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.8 6.8l1.06-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>  anrufen</a>
       </div>
       <p class="hero-micro">✓ Kostenlos &nbsp;·&nbsp; ✓ Unverbindlich &nbsp;·&nbsp; ✓ Antwort in 2 Stunden</p>
       <div class="hero-stats">
@@ -529,7 +528,7 @@ footer{background:var(--navy-dark);border-top:1px solid var(--glass-dark-border)
       <h2 class="sec-h2 dark">Rechtsgebiete</h2>
       <p class="sec-sub dark">Spezialisierte Fachanwälte für jedes Rechtsgebiet — mit nachweisbarer Erfolgsbilanz.</p>
     </div>
-    <div class="areas-grid"><div class="area-card">Rechtsberatung</div></div>
+    <div class="areas-grid">{{RECHTSGEBIETE_HTML}}</div>
   </div>
 </section>
 
@@ -541,7 +540,7 @@ footer{background:var(--navy-dark);border-top:1px solid var(--glass-dark-border)
       <h2 class="sec-h2 dark">Unsere Leistungen</h2>
       <p class="sec-sub dark">Maßgeschneiderte rechtliche Lösungen — transparent, effizient und auf Ihren Erfolg ausgerichtet.</p>
     </div>
-    <div class="svc-grid"><div class="svc-card"><span class="svc-num">01</span>Rechtliche Beratung</div></div>
+    <div class="svc-grid">{{SERVICES_HTML}}</div>
   </div>
 </section>
 
@@ -668,7 +667,7 @@ footer{background:var(--navy-dark);border-top:1px solid var(--glass-dark-border)
       <h2 class="sec-h2 light">Was unsere <span class="gold-text">Mandanten</span> sagen</h2>
       <p class="sec-sub light">Vertrauen aufgebaut durch Ergebnisse — nicht durch Versprechen.</p>
     </div>
-    
+    {{REVIEWS_SECTION}}
   </div>
 </section>
 
@@ -679,7 +678,7 @@ footer{background:var(--navy-dark);border-top:1px solid var(--glass-dark-border)
       <div class="rv-left">
         <div class="sec-label">Über die Kanzlei</div>
         <h2 class="sec-h2 light" style="margin-top:10px">Vertrauen durch <span class="gold-text">Kompetenz</span></h2>
-        <p class="about-body" style="color:rgba(255,255,255,.5);margin-top:12px">Kompetente Rechtsberatung für Ihre individuellen Anliegen in Hanover.</p>
+        <p class="about-body" style="color:rgba(255,255,255,.5);margin-top:12px">{{ABOUT_TEXT}}</p>
         <div class="about-checks">
           <div class="about-check"><div class="about-check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13" height="13"><polyline points="20 6 9 17 4 12"/></svg></div><span>Persönliche Beratung auf höchstem Niveau</span></div>
           <div class="about-check"><div class="about-check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="13" height="13"><polyline points="20 6 9 17 4 12"/></svg></div><span>Spezialisierung auf komplexe Rechtsfragen</span></div>
@@ -743,7 +742,7 @@ footer{background:var(--navy-dark);border-top:1px solid var(--glass-dark-border)
       <p class="cta-banner-sub">Jeder Tag ohne anwaltliche Vertretung kann Sie Geld kosten. Handeln Sie jetzt — wir sind bereit.</p>
       <div class="cta-banner-actions">
         <a href="#kontakt" class="btn-gold">Kostenlose Erstberatung anfordern <svg class="arrow-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-        <a href="tel:0511457193" class="btn-outline-light"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.49 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.8 6.8l1.06-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Sofort anrufen</a>
+        <a href="tel:{{PHONE_CLEAN}}" class="btn-outline-light"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.49 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.8 6.8l1.06-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Sofort anrufen</a>
       </div>
       <div class="cta-trust-row">
         <span class="cta-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> 100% vertraulich</span>
@@ -782,8 +781,8 @@ footer{background:var(--navy-dark);border-top:1px solid var(--glass-dark-border)
           <div class="faq-answer"><p class="faq-answer-text">Selbstverständlich. Über unser digitales Mandanten-Portal können Sie Termine per Video wahrnehmen, Dokumente austauschen und den Status Ihres Falls jederzeit einsehen.</p></div>
         </div>
         <div class="faq-item">
-          <button class="faq-btn"><span class="faq-btn-text">Wie ist die Erfolgsquote Ihrer Kanzlei?</span><svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-          <div class="faq-answer"><p class="faq-answer-text">Wir setzen Ihre Rechte konsequent durch — ob durch außergerichtliche Einigungen oder Gerichtsverfahren. Jeder Fall wird individuell mit einer maßgeschneiderten Strategie bearbeitet.</p></div>
+          <button class="faq-btn"><span class="faq-btn-text">Wie gehen Sie an meinen Fall heran?</span><svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer"><p class="faq-answer-text">Jeder Fall wird individuell analysiert und mit einer maßgeschneiderten Strategie bearbeitet — ob außergerichtlich oder vor Gericht. Sie erhalten von Anfang an klare Einschätzungen und ehrliche Beratung.</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-btn"><span class="faq-btn-text">Wie funktioniert das Mandanten-Portal?</span><svg class="faq-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
@@ -810,9 +809,9 @@ footer{background:var(--navy-dark);border-top:1px solid var(--glass-dark-border)
           <div class="contact-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Rechtsschutzversicherung? Wir prüfen die Deckung</span></div>
         </div>
         <div style="margin-top:32px">
-          <div class="contact-info-item"><div class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.49 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.8 6.8l1.06-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><span class="contact-info-text"><a href="tel:0511457193">0511 457193</a></span></div>
-          <div class="contact-info-item"><div class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><span class="contact-info-text"></span></div>
-          <div class="contact-info-item"><div class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><span class="contact-info-text">Hanover</span></div>
+          <div class="contact-info-item"><div class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.49 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.8 6.8l1.06-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><span class="contact-info-text"><a href="tel:{{PHONE_CLEAN}}"></a></span></div>
+          <div class="contact-info-item"><div class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><span class="contact-info-text">{{EMAIL_LINK}}</span></div>
+          <div class="contact-info-item"><div class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><span class="contact-info-text">{{ADDRESS}}</span></div>
           <div class="contact-info-item"><div class="contact-info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><span class="contact-info-text">Mo–Fr: 09:00 – 18:00 Uhr</span></div>
         </div>
       </div>
@@ -861,7 +860,7 @@ footer{background:var(--navy-dark);border-top:1px solid var(--glass-dark-border)
           <svg viewBox="0 0 32 32" fill="none"><path d="M16 3L4 9v8c0 5.5 5.1 10.7 12 12 6.9-1.3 12-6.5 12-12V9L16 3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
           <span class="foot-brand-name">Zahnärzte am Küchengarten Dr. Aaron Boruchov & Kollegen</span>
         </div>
-        <p class="foot-tag">Ihr Recht — unser Auftrag &mdash; Ihr Rechtsanwalt in Hanover.</p>
+        <p class="foot-tag">{{TAGLINE}} &mdash; Ihr Rechtsanwalt in Hanover.</p>
       </div>
       <div>
         <p class="foot-col-h">Rechtsgebiete</p>
@@ -873,7 +872,7 @@ footer{background:var(--navy-dark);border-top:1px solid var(--glass-dark-border)
       </div>
       <div>
         <p class="foot-col-h">Kontakt</p>
-        <ul class="foot-links"><li><a href="tel:0511457193">0511 457193</a></li><li></li><li><a href="#kontakt">Beratungsanfrage</a></li></ul>
+        <ul class="foot-links"><li><a href="tel:{{PHONE_CLEAN}}"></a></li><li>{{EMAIL_LINK}}</li><li><a href="#kontakt">Beratungsanfrage</a></li></ul>
       </div>
     </div>
     <div class="foot-bottom">
@@ -896,7 +895,7 @@ footer{background:var(--navy-dark);border-top:1px solid var(--glass-dark-border)
         <span class="sticky-live-text"><strong>Jetzt verfügbar</strong> — Kostenlose Erstberatung</span>
       </div>
       <div class="sticky-actions">
-        <a href="tel:0511457193" class="sticky-btn-outline"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.49 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.8 6.8l1.06-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Sofort anrufen</a>
+        <a href="tel:{{PHONE_CLEAN}}" class="sticky-btn-outline"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.49 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.8 6.8l1.06-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Sofort anrufen</a>
         <a href="#kontakt" class="sticky-btn-gold">Erstberatung sichern <svg class="arrow-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
         <button class="sticky-dismiss" id="sticky-dismiss" aria-label="Schließen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
       </div>
